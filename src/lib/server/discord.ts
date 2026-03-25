@@ -39,6 +39,23 @@ export async function initDiscordBot() {
 		});
 	});
 
+	discordClient.on(Events.ThreadUpdate, async (oldThread, newThread) => {
+		const becameArchived = !!newThread.archived && !oldThread.archived;
+		const becameLocked = !!newThread.locked && !oldThread.locked;
+		if (!becameArchived && !becameLocked) return;
+
+		const conversationId = await getConversationIdByThread(newThread.id);
+		if (!conversationId) return;
+
+		await closeConversation(conversationId);
+		sseBus.emit(`close:${conversationId}`, {});
+	});
+
 	await discordClient.login(env.DISCORD_BOT_TOKEN);
 	console.log('[Discord] Bot logged in');
+
+	process.once('SIGINT', () => {
+		discordClient.destroy();
+		process.exit(0);
+	});
 }
