@@ -1,11 +1,10 @@
 <script>
-	import logo from '$lib/assets/logo_full.svg';
+	import logo from '$lib/assets/logo_full_white.svg';
 </script>
 
 <div class="login-page">
 	<div class="login-card">
 		<img src={logo} alt="JulieGPT" class="login-logo" />
-		<h1 class="login-title">JulieGPT</h1>
 		<p class="login-subtitle">Sign in to start chatting.</p>
 		<a href="/auth/discord" class="discord-btn">
 			<svg width="20" height="20" viewBox="0 0 127.14 96.36" fill="currentColor">
@@ -42,7 +41,6 @@
 	}
 
 	.login-logo {
-		width: 3.5rem;
 		height: 3.5rem;
 	}
 
