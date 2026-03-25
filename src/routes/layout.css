@@ -1,0 +1,59 @@
+@import 'tailwindcss';
+
+* {
+  font-family: 'Comfortaa', cursive;
+}
+
+:root {
+  --bg-root:          #f9f8f6;
+  --bg-sidebar:       #f0ede8;
+  --bg-main:          #ffffff;
+  --bg-input:         #f9f8f6;
+  --bg-search:        #e8e4dc;
+  --bg-active:        #e2ddd6;
+  --bg-hover-side:    #e2ddd6;
+  --bg-hover-main:    #f0ede8;
+  --bg-hover-icon:    #e8e4dc;
+  --bg-card:          #f9f8f6;
+  --bg-card-hover:    #f0ede8;
+  --border-side:      #e2ddd6;
+  --border-header:    #e8e6e1;
+  --border-card:      #e2ddd6;
+  --border-card-hover:#d4cec5;
+  --text-primary:     #1a1a1a;
+  --text-secondary:   #6b6963;
+  --text-muted:       #9b9188;
+  --text-list:        #3d3a36;
+  --text-footer:      #b0a99f;
+  --bubble-bg:        #1a1a1a;
+  --bubble-text:      #f9f8f6;
+  --send-off-bg:      #e2ddd6;
+  --send-off-color:   #b0a99f;
+}
+
+.dark {
+  --bg-root:          #1c1c1c;
+  --bg-sidebar:       #141414;
+  --bg-main:          #1c1c1c;
+  --bg-input:         #262626;
+  --bg-search:        #242424;
+  --bg-active:        #2e2e2e;
+  --bg-hover-side:    #262626;
+  --bg-hover-main:    #262626;
+  --bg-hover-icon:    #2e2e2e;
+  --bg-card:          #242424;
+  --bg-card-hover:    #2e2e2e;
+  --border-side:      #2e2e2e;
+  --border-header:    #2a2a2a;
+  --border-card:      #333333;
+  --border-card-hover:#3a3a3a;
+  --text-primary:     #ececec;
+  --text-secondary:   #888888;
+  --text-muted:       #555555;
+  --text-list:        #cccccc;
+  --text-footer:      #444444;
+  --bubble-bg:        #303030;
+  --bubble-text:      #ececec;
+  --send-off-bg:      #2e2e2e;
+  --send-off-color:   #555555;
+}

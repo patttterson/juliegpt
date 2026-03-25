@@ -1,0 +1,1 @@
+ALTER TABLE `conversations` ADD `closed_at` integer;
