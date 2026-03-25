@@ -1,6 +1,10 @@
+<script>
+	import logo from '$lib/assets/logo_full.svg';
+</script>
+
 <div class="login-page">
 	<div class="login-card">
-		<img src="/favicon.svg" alt="JulieGPT" class="login-logo" />
+		<img src={logo} alt="JulieGPT" class="login-logo" />
 		<h1 class="login-title">JulieGPT</h1>
 		<p class="login-subtitle">Sign in to start chatting.</p>
 		<a href="/auth/discord" class="discord-btn">
